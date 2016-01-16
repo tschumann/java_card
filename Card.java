@@ -1,4 +1,4 @@
-package deck;
+package java_card;
 
 public abstract class Card
 {	

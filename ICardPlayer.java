@@ -1,4 +1,4 @@
-package deck;
+package java_card;
 
 import java.util.ArrayList;
 
