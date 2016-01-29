@@ -1,6 +1,6 @@
 package java_card;
 
-public abstract class Card
+public abstract class Card implements ICard
 {	
 	protected CardSuit suit;
 	protected CardRank rank;
