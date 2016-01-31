@@ -1,6 +1,6 @@
 package java_card;
 
-public abstract class Card implements ICard
+public abstract class Card implements ICard, Comparable<Card>
 {	
 	protected CardSuit suit;
 	protected CardRank rank;
@@ -24,4 +24,6 @@ public abstract class Card implements ICard
 	{
 		return suit;
 	}
+	
+	public abstract int compareTo(Card card);
 }

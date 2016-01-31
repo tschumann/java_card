@@ -1,10 +1,13 @@
 package java_card;
 
+import java.util.ArrayList;
+
 public class Deck
 {
 	private ICardGame game;
+	private ArrayList<ICard> deck;
 	
-	public Deck()
+	public Deck(boolean includeJokers)
 	{
 	}
 	
@@ -16,5 +19,13 @@ public class Deck
 	public ICardGame getGame()
 	{
 		return this.game;
+	}
+	
+	/*
+	 * How many cards there in the deck
+	 */
+	public int count()
+	{
+		return deck.size();
 	}
 }
