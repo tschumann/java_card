@@ -49,4 +49,9 @@ public abstract class Team implements ITeam
 		
 		this.players.add(player);
 	}
+	
+	public boolean equals(Object obj)
+	{
+		return ((Team)obj).getId() == this.id;
+	}
 }

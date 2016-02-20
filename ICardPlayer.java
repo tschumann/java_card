@@ -8,5 +8,5 @@ public interface ICardPlayer
 	public void setIsDealer(boolean isDealer);
 	public void receive(ICard card);
 	public ICard play(Collection<ICard> played);
-	public void seePlayedHand(Collection<ICard> hand);
+	public void seePlayedCards(Collection<CardPlay> playedCard);
 }
