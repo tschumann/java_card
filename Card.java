@@ -27,10 +27,5 @@ public abstract class Card implements ICard, Comparable<Card>
 		return suit;
 	}
 	
-	public void setGame(ICardGame game)
-	{
-		this.game = game;
-	}
-	
 	public abstract int compareTo(Card card);
 }

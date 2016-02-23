@@ -13,7 +13,6 @@ public abstract class Team implements ITeam
 	
 	protected Team()
 	{
-		// TODO: should things be initialised here too in case?
 	}
 	
 	public Team(int id, int maxPlayers)
