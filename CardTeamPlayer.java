@@ -2,7 +2,7 @@ package java_card;
 
 public abstract class CardTeamPlayer extends CardPlayer
 {
-	protected Team team;
+	private Team team;
 	
 	public CardTeamPlayer(Team team)
 	{

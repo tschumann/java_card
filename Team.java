@@ -5,9 +5,9 @@ import java.util.Collection;
 
 public abstract class Team implements ITeam
 {
-	protected int id;
-	protected int maxPlayers;
-	protected int wins;
+	private int id;
+	private int maxPlayers;
+	private int wins;
 	
 	protected Collection<ICardPlayer> players;
 	

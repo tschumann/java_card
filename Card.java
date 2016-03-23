@@ -2,9 +2,9 @@ package java_card;
 
 public abstract class Card implements ICard, Comparable<Card>
 {	
-	protected CardSuit suit;
-	protected CardRank rank;
-	protected ICardGame game;
+	private CardSuit suit;
+	private CardRank rank;
+	private ICardGame game;
 	
 	protected Card()
 	{
@@ -19,12 +19,17 @@ public abstract class Card implements ICard, Comparable<Card>
 	
 	public CardRank getRank()
 	{
-		return rank;
+		return this.rank;
 	}
 	
 	public CardSuit getSuit()
 	{
-		return suit;
+		return this.suit;
+	}
+	
+	public ICardGame getGame()
+	{
+		return this.game;
 	}
 	
 	public abstract int compareTo(Card card);

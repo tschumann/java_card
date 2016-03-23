@@ -2,7 +2,7 @@ package java_card;
 
 public abstract class ScoredTeam extends Team
 {
-	protected int score;
+	private int score;
 	
 	protected ScoredTeam()
 	{

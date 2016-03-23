@@ -2,9 +2,9 @@ package java_card;
 
 public class CardPlay
 {
-	protected ICardPlayer player;
-	protected ICard card;
-	protected ICardGame game;
+	private ICardPlayer player;
+	private ICard card;
+	private ICardGame game;
 	
 	/*
 	 * A class representing a what a player has played in a round

@@ -5,8 +5,8 @@ import java.util.Collection;
 
 public abstract class CardPlayer implements ICardPlayer
 {
-	protected Collection<ICard> hand;
-	protected boolean isDealer;
+	private Collection<ICard> hand;
+	private boolean isDealer;
 	
 	public CardPlayer()
 	{
@@ -27,5 +27,10 @@ public abstract class CardPlayer implements ICardPlayer
 	public void receive(ICard card)
 	{
 		hand.add(card);
+	}
+	
+	public Collection<ICard> getHand()
+	{
+		return new ArrayList<ICard>(this.hand);
 	}
 }
