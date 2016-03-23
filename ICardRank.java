@@ -1,6 +1,6 @@
 package java_card;
 
-public interface CardRank
+public interface ICardRank
 {	
 	public int ordinal();
 }

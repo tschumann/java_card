@@ -2,27 +2,27 @@ package java_card;
 
 public abstract class Card implements ICard, Comparable<Card>
 {	
-	private CardSuit suit;
-	private CardRank rank;
+	private ICardSuit suit;
+	private ICardRank rank;
 	private ICardGame game;
 	
 	protected Card()
 	{
 	}
 	
-	public Card(CardSuit suit, CardRank rank, ICardGame game)
+	public Card(ICardSuit suit, ICardRank rank, ICardGame game)
 	{
 		this.suit = suit;
 		this.rank = rank;
 		this.game = game;
 	}
 	
-	public CardRank getRank()
+	public ICardRank getRank()
 	{
 		return this.rank;
 	}
 	
-	public CardSuit getSuit()
+	public ICardSuit getSuit()
 	{
 		return this.suit;
 	}
