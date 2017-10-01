@@ -6,27 +6,6 @@ import org.junit.Test
 
 class CardTest {
 
-    class TestSuit : ICardSuit {
-        override fun ordinal(): Int {
-            return 0;
-        }
-    }
-
-    class TestRank : ICardRank {
-        override fun ordinal(): Int {
-            return 0;
-        }
-    }
-
-    class TestCard(suit: ICardSuit, rank: ICardRank, game: ICardGame) : Card(suit, rank, game) {
-        override fun compareTo(card: Card): Int {
-            return 0;
-        }
-    }
-
-    class TestCardGame() : CardGame() {
-    }
-
     @Test
     fun testGetAttributes() {
         val suit = TestSuit();
