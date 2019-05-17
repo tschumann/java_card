@@ -11,6 +11,7 @@ public abstract class ScoredTeam extends Team
 	
 	public ScoredTeam(int id, int maxPlayers)
 	{
+		super(id, maxPlayers);
 		this.score = 0;
 	}
 	

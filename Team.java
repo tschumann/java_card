@@ -1,7 +1,7 @@
 package java_card;
 
 import java.util.ArrayList;
-import java.util.Collection;
+import java.util.List;
 
 public abstract class Team implements ITeam
 {
@@ -9,7 +9,7 @@ public abstract class Team implements ITeam
 	private int maxPlayers;
 	private int wins;
 	
-	protected Collection<ICardPlayer> players;
+	protected List<ICardPlayer> players;
 	
 	protected Team()
 	{
@@ -40,13 +40,17 @@ public abstract class Team implements ITeam
 	
 	public void addPlayer(ICardPlayer player) throws Exception
 	{
-		// TODO: is there a current length method in Collection?
-		if (this.players.toArray().length == this.maxPlayers)
+		if (this.players.size() == this.maxPlayers)
 		{
-			throw new Exception();
+			throw new Exception("Too many players added");
 		}
 		
 		this.players.add(player);
+	}
+
+	public List<ICardPlayer> getPlayers()
+	{
+		return this.players;
 	}
 	
 	public boolean equals(Object obj)
