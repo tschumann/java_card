@@ -15,11 +15,11 @@ class TestCardPlayer : ICardPlayer {
     override fun receive(card: ICard?) {
     }
 
-    override fun play(played: MutableCollection<CardPlay>?): ICard {
+    override fun play(played: List<CardPlay>?): ICard {
         return cardToPlay;
     }
 
-    override fun seePlayedCards(played: MutableCollection<CardPlay>?) {
+    override fun seePlayedCards(played: List<CardPlay>?) {
     }
 
     fun setPlayCard(card: ICard) {

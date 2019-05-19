@@ -1,11 +1,11 @@
 package java_card;
 
 import java.util.ArrayList;
-import java.util.Collection;
+import java.util.List;
 
 public abstract class CardPlayer implements ICardPlayer
 {
-	private Collection<ICard> hand;
+	private List<ICard> hand;
 	private boolean isDealer;
 	
 	public CardPlayer()
@@ -29,7 +29,7 @@ public abstract class CardPlayer implements ICardPlayer
 		hand.add(card);
 	}
 	
-	public Collection<ICard> getHand()
+	public List<ICard> getHand()
 	{
 		return new ArrayList<ICard>(this.hand);
 	}

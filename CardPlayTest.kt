@@ -10,7 +10,7 @@ class CardPlayTest {
         val player = TestCardPlayer();
         val game = TestCardGame();
         val card = TestCard(TestSuit(), TestRank(), game);
-        val play = CardPlay(player, card, game);
+        val play = CardPlay(player, card);
         assertEquals(card.suit.ordinal(), play.card.suit.ordinal());
         assertEquals(card.rank.ordinal(), play.card.rank.ordinal());
     }

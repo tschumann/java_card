@@ -2,18 +2,19 @@ package java_card;
 
 public class CardPlay
 {
-	private ICardPlayer player;
-	private ICard card;
-	private ICardGame game;
+	protected ICardPlayer player;
+	protected ICard card;
+
+	protected CardPlay() {
+	}
 	
 	/*
 	 * A class representing a what a player has played in a round
 	 */
-	public CardPlay(ICardPlayer player, ICard card, ICardGame game)
+	public CardPlay(ICardPlayer player, ICard card)
 	{
 		this.player = player;
 		this.card = card;
-		this.game = game;
 	}
 	
 	public ICardPlayer getPlayer()
