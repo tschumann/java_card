@@ -1,6 +1,6 @@
 package java_card
 
-class TestSuit : ICardSuit {
+class TestSuitImpl : ICardSuit {
 
     override fun ordinal(): Int {
         return 0;

@@ -1,9 +1,9 @@
 package java_card
 
-class TestCardPlayer : ICardPlayer {
+class TestCardPlayerImpl : ICardPlayer {
 
     // set it to a dummy card to start with as it can't be null
-    var cardToPlay: ICard = TestCard(TestSuit(), TestRank(), TestCardGame());
+    var cardToPlay: ICard = TestCardImpl(TestSuitImpl(), TestRankImpl(), TestCardGameImpl());
 
     override fun getIsDealer(): Boolean {
         return false;

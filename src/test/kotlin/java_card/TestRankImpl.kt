@@ -1,6 +1,6 @@
 package java_card
 
-class TestRank : ICardRank {
+class TestRankImpl : ICardRank {
 
     override fun ordinal(): Int {
         return 0;

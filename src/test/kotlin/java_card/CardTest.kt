@@ -8,9 +8,9 @@ class CardTest {
 
     @Test
     fun testGetAttributes() {
-        val suit = TestSuit();
-        val rank = TestRank();
-        val card = TestCard(suit, rank, TestCardGame());
+        val suit = TestSuitImpl();
+        val rank = TestRankImpl();
+        val card = TestCardImpl(suit, rank, TestCardGameImpl());
         assertEquals(suit.ordinal(), card.suit.ordinal());
         assertEquals(rank.ordinal(), card.rank.ordinal());
         assertNotNull(card.game);
