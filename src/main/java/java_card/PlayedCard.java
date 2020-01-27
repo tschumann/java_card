@@ -17,4 +17,12 @@ public class PlayedCard {
         this.card = card;
         this.player = player;
     }
+
+    public ICard getCard() {
+        return this.card;
+    }
+
+    public ICardPlayer getPlayer() {
+        return this.player;
+    }
 }

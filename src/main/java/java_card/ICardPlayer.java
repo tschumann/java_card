@@ -2,6 +2,9 @@ package java_card;
 
 import java.util.List;
 
+/**
+ * Base card player interface.
+ */
 public interface ICardPlayer
 {
 	public boolean getIsDealer();

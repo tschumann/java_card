@@ -2,6 +2,7 @@ package java_card;
 
 import java.util.ArrayList;
 import java.util.List;
+import java_card.ICard;
 
 public abstract class CardPlayer implements ICardPlayer
 {
