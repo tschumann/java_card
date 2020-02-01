@@ -3,8 +3,8 @@ package java_card;
 public abstract class ScoredTeam extends Team
 {
 	private int score;
-	
-	protected ScoredTeam()
+
+	private ScoredTeam()
 	{
 		// TODO: initialise stuff here too?
 	}
