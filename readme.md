@@ -4,5 +4,5 @@ java_card
 Building
 --------
 ```
-./gradlew clean build publishToMavenLocal
+./gradlew clean build publish
 ```
