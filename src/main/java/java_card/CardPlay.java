@@ -5,7 +5,7 @@ public class CardPlay
 	protected ICardPlayer player;
 	protected ICard card;
 
-	protected CardPlay()
+	private CardPlay()
 	{
 	}
 	

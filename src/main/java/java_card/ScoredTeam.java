@@ -3,11 +3,6 @@ package java_card;
 public abstract class ScoredTeam extends Team
 {
 	private int score;
-
-	private ScoredTeam()
-	{
-		// TODO: initialise stuff here too?
-	}
 	
 	public ScoredTeam(int id, int maxPlayers)
 	{

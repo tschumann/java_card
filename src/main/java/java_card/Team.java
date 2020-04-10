@@ -11,7 +11,7 @@ public abstract class Team implements ITeam
 
 	protected List<ICardPlayer> players;
 
-	protected Team()
+	private Team()
 	{
 	}
 

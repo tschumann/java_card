@@ -6,7 +6,7 @@ public abstract class Card implements ICard, Comparable<Card>
 	private ICardRank rank;
 	private ICardGame game;
 	
-	protected Card()
+	private Card()
 	{
 	}
 	
