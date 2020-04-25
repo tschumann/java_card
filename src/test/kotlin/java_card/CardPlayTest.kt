@@ -11,7 +11,7 @@ class CardPlayTest {
         val game = TestCardGameImpl();
         val card = TestCardImpl(TestSuitImpl(), TestRankImpl(), game);
         val play = CardPlay(player, card);
-        assertEquals(card.suit.ordinal(), play.card.suit.ordinal());
-        assertEquals(card.rank.ordinal(), play.card.rank.ordinal());
+        assertEquals(player, play.getPlayer());
+        assertEquals(card, play.getCard());
     }
 }
