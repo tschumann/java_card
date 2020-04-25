@@ -42,6 +42,15 @@ test {
     }
 }
 
+task('checkPublish', type: DefaultTask) {
+    doLast {
+        File file = new File("${System.getProperty("user.home")}/.m2/repository/jedcom/jedcom/${version}/jedcom-${version}.jar")
+        if (!file.exists()) {
+            throw new StopActionException(".jar file was not published to local maven")
+        }
+    }
+}
+
 jacoco {
     toolVersion = "0.8.5"
 }
