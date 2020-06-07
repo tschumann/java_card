@@ -7,9 +7,9 @@ class CardPlayerTest {
 
     @Test
     fun testIsDealer() {
-        val cardPlayer = TestCardPlayerImpl();
-        Assert.assertEquals(false, cardPlayer.getIsDealer());
-        cardPlayer.setIsDealer(true);
-        Assert.assertEquals(true, cardPlayer.getIsDealer());
+        val cardPlayer: TestCardPlayerImpl = TestCardPlayerImpl()
+        Assert.assertEquals(false, cardPlayer.getIsDealer())
+        cardPlayer.setIsDealer(true)
+        Assert.assertEquals(true, cardPlayer.getIsDealer())
     }
 }

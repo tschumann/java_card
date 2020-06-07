@@ -7,17 +7,17 @@ class TeamTest {
 
     @Test
     fun testGetAttributes() {
-        val team = TestTeamImpl(1, 2);
-        assertEquals(team.id, 1);
-        assertEquals(team.wins, 0);
-        assertEquals(team.players.size, 0);
+        val team: TestTeamImpl = TestTeamImpl(1, 2)
+        assertEquals(team.id, 1)
+        assertEquals(team.wins, 0)
+        assertEquals(team.players.size, 0)
     }
 
     @Test
     fun testAddWin() {
-        val team = TestTeamImpl(1, 2);
-        assertEquals(team.wins, 0);
-        team.addWin();
-        assertEquals(team.wins, 1);
+        val team: TestTeamImpl = TestTeamImpl(1, 2)
+        assertEquals(team.wins, 0)
+        team.addWin()
+        assertEquals(team.wins, 1)
     }
 }

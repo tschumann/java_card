@@ -7,11 +7,11 @@ class CardPlayTest {
 
     @Test
     fun testGetAttributes() {
-        val player = TestCardPlayerImpl();
-        val game = TestCardGameImpl();
-        val card = TestCardImpl(TestSuitImpl(), TestRankImpl(), game);
-        val play = CardPlay(player, card);
-        assertEquals(player, play.getPlayer());
-        assertEquals(card, play.getCard());
+        val player: TestCardPlayerImpl = TestCardPlayerImpl()
+        val game: TestCardGameImpl = TestCardGameImpl()
+        val card: TestCardImpl = TestCardImpl(TestSuitImpl(), TestRankImpl(), game)
+        val play: CardPlay = CardPlay(player, card)
+        assertEquals(player, play.getPlayer())
+        assertEquals(card, play.getCard())
     }
 }
