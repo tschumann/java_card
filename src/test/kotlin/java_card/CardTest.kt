@@ -1,8 +1,7 @@
 package java_card
 
-import org.junit.Assert.assertEquals
-import org.junit.Assert.assertNotNull
-import org.junit.Test
+import org.junit.jupiter.api.Assertions
+import org.junit.jupiter.api.Test
 
 class CardTest {
 
@@ -11,8 +10,8 @@ class CardTest {
         val suit: TestSuitImpl = TestSuitImpl()
         val rank: TestRankImpl = TestRankImpl()
         val card: TestCardImpl = TestCardImpl(suit, rank, TestCardGameImpl())
-        assertEquals(suit.ordinal(), card.suit.ordinal())
-        assertEquals(rank.ordinal(), card.rank.ordinal())
-        assertNotNull(card.game)
+        Assertions.assertEquals(suit.ordinal(), card.suit.ordinal())
+        Assertions.assertEquals(rank.ordinal(), card.rank.ordinal())
+        Assertions.assertNotNull(card.game)
     }
 }

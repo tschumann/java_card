@@ -1,7 +1,7 @@
 package java_card
 
-import org.junit.Assert.assertEquals
-import org.junit.Test
+import org.junit.jupiter.api.Assertions
+import org.junit.jupiter.api.Test
 
 class PlayedCardTest {
 
@@ -11,7 +11,7 @@ class PlayedCardTest {
         val game: TestCardGameImpl = TestCardGameImpl()
         val card: TestCardImpl = TestCardImpl(TestSuitImpl(), TestRankImpl(), game)
         val playedCard: PlayedCard = PlayedCard(card, player)
-        assertEquals(card, playedCard.getCard())
-        assertEquals(player, playedCard.getPlayer())
+        Assertions.assertEquals(card, playedCard.getCard())
+        Assertions.assertEquals(player, playedCard.getPlayer())
     }
 }

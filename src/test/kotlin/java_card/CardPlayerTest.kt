@@ -1,15 +1,15 @@
 package java_card
 
-import org.junit.Assert
-import org.junit.Test
+import org.junit.jupiter.api.Assertions
+import org.junit.jupiter.api.Test
 
 class CardPlayerTest {
 
     @Test
     fun testIsDealer() {
         val cardPlayer: TestCardPlayerImpl = TestCardPlayerImpl()
-        Assert.assertEquals(false, cardPlayer.getIsDealer())
+        Assertions.assertEquals(false, cardPlayer.getIsDealer())
         cardPlayer.setIsDealer(true)
-        Assert.assertEquals(true, cardPlayer.getIsDealer())
+        Assertions.assertEquals(true, cardPlayer.getIsDealer())
     }
 }
